@@ -79,7 +79,7 @@ press i (which means to insert), and paste the following code in place of the de
 </body>
 </html>
 ```
-press `esc` once and the `:wq` and enter.
+press `esc` once and then type `:wq` and press enter.
 
 come back to home directory and package the war file again
 ```bash
