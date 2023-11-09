@@ -39,7 +39,7 @@ sudo /usr/sbin/alternatives --config javac
 
 Now if you want to install a webapp, use the following command -
 ```bash
-mvn archetype:generate -DgroupId=in.ajinkya -DartifactId=My-first-webapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+mvn archetype:generate -DgroupId=in.ajinkya -DartifactId=My-First-webapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 ```
 
 Now if you want to install a simple app, use the following command -
@@ -56,3 +56,43 @@ mvn package
 ```
 
 Resource been used for the above setup is : https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-connect-prerq.html
+
+
+### Modifying the home page design of java application.
+Edit "index.jsp" file like below (File Location : project-folder\src\main\webapp)
+Go to the file location : 
+```bash
+cd My-first-webapp/src/main/webapp/
+```
+
+To open vi editor:
+```bash
+vi index.jsp
+```
+press i (which means to insert), and paste the following code in place of the default code.
+```bash
+<html>
+<body>
+<h1><font color='red'>Hi this is Ajinkya Dawange<font></h1>
+<h2>I'm currently studying in NITK.</h2>
+<a href="https://ub.nitk.ac.in">My first large scale project</a>
+</body>
+</html>
+```
+press `esc` once and the `:wq` and enter.
+
+come back to home directory and package the war file again
+```bash
+cd ..
+cd ..
+cd ..
+mvn clean package
+```
+
+The war file is updated.
+Now if you want to see the live changes using Tomcat server, then follow the below link - 
+### https://github.com/ajinkyadawange31045/tomcat-setup-for-AmazonLinux-ec2
+The above link will be in continuation to this itself.
+
+
+
