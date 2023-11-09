@@ -1,0 +1,1 @@
+# maven-setup-for-AmazonLinux-ec2
