@@ -35,12 +35,12 @@ sudo /usr/sbin/alternatives --config javac
 
 Now if you want to install a webapp, use the following command -
 ```bash
-mvn archetype:generate -DgroupId=in.ashokit -DartifactId=01-Maven-App -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+mvn archetype:generate -DgroupId=in.ajinkya -DartifactId=My-first-webapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 ```
 
 Now if you want to install a simple app, use the following command -
 ```bash
-mvn archetype:generate -DgroupId=in.ashokit -DartifactId=01-Maven-App -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+mvn archetype:generate -DgroupId=in.ajinkya -DartifactId=Ajinkya-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
 
 
